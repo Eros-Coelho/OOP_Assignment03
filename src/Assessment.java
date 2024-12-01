@@ -7,6 +7,7 @@ import java.time.LocalDate;
 
 public class Assessment {
 
+//    enum for submission with 4 states: either not yet submitted, submitted, updated or late
     public enum Submission {
         NO_SUBMISSION,
         SUBMITTED,
@@ -19,6 +20,7 @@ public class Assessment {
     private Submission status;
     private LocalDate timeStamp;
 
+//    setting the standard value of status for not yet submitted
     public Assessment (String title, String content){
         this.title = title;
         this.content = content;

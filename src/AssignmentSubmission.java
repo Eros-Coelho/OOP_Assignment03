@@ -19,12 +19,14 @@ public class AssignmentSubmission {
         this.deadline = deadline;
     }
 
+//    implementing the singleton pattern here, ensuring this can only be instanced once in the entire code
     public static AssignmentSubmission getInstance (DeadLine deadline){
         if (instance == null){
-            instance = new AssignmentSubmission(DeadLine);
+            instance = new AssignmentSubmission(deadline);
         } return instance;
     }
 
+//    normal getters for private attributes
     public static DeadLine getDeadLine() {
         return DeadLine;
     }
@@ -33,6 +35,7 @@ public class AssignmentSubmission {
         return assessments;
     }
 
+//    checks if the assignment is late, submitted or on time
     public void submit (Assessment assessment){
         LocalDate currentTime = LocalDate.now();
         if (assessment.getStatus() == Assessment.Submission.NO_SUBMISSION){

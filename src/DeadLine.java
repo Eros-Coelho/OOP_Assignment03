@@ -17,6 +17,7 @@ public final class DeadLine {
         return date;
     }
 
+//    boolean that returns true if the date is before the due date aka deadline for the assignment
     public boolean beforeDeadLine(LocalDate time){
         return time.isBefore(date);
     }
