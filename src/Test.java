@@ -11,5 +11,8 @@ public class Test {
 
         DeadLine deadline = new DeadLine(LocalDate.of(2024, 12, 8));
         AssignmentSubmission submissionManager = AssignmentSubmission.getInstance(deadline);
+
+        Assessment assessment1 = new Assessment("Lab One", "Classes and Objects");
+        Assessment assessment2 = new Assessment("Lab Two", "Abstract Classes");
     }
 }
