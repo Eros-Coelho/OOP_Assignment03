@@ -52,6 +52,7 @@ public class Assessment {
         this.timeStamp = timeStamp;
     }
 
+//    overriding the toString method to return all the data from assessments as a single String
     @Override
     public String toString(){
         return "Assessment {" + "Title: " + title + ", content: " + content + ", status: " + status + ", time stamp: " + timeStamp + "}";
