@@ -51,4 +51,9 @@ public class Assessment {
     public void setTimeStamp (LocalDate timeStamp){
         this.timeStamp = timeStamp;
     }
+
+    @Override
+    public String toString(){
+        return "Assessment {" + "Title: " + title + ", content: " + content + ", status: " + status + ", time stamp: " + timeStamp + "}";
+    }
 }
